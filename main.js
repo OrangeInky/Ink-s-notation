@@ -63,6 +63,13 @@ function run2() {
     repeater(x);
 }
 
+function run3() {
+    var x = parseInt(document.getElementById('X').value, 10);
+    var y = parseInt(document.getElementById('Y').value, 10);
+    var z = parseInt(document.getElementById('Z').value, 10);
+    expands(x,y,z);
+}
+
 function call() {
     getlastelement();
     getrepeatfac();

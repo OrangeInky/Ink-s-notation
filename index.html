@@ -23,13 +23,15 @@ Rule 2: if the last term is 0, then add 1 to z and the zero is removed. <br> <br
 <div>
     <input type="text" placeholder="Enter a whole number" id="foobar" /> <br>
 <button type="button" onclick="run();">Start</button> <br>
+<div> <input type="text" placeholder="X" id="X" />, <input type="text" placeholder="Y" id="Y" />,     <input type="text" placeholder="Z" id="Z" /></div>
+<button onclick="run3()"> assign individual values</button>
+</div>
 <button onclick="Calculate()"> Solve Once</button> <br>
  <button onclick="betterrepeater()"> Solve till the next 1 (Could cause lag if the array is too long)</button> <br>
  <input type="text" placeholder="Calculate how many time" id="foobar2" /> <br>
  <button onclick="run2()"> Solve n times</button> <br>
  <button onclick="count()"> Shows the amount of each number</button>
-</div>
- <div id="Counts"> 0</div>
+ <div id="Counts"> </div>
 <script src="main.js
 "></script>
 </html>
