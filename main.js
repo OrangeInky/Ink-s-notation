@@ -48,6 +48,21 @@ function expands(x,y,z) {
     update();
 }
 
+function Start(x) {
+    reset()
+    expands(x,x,x);
+    update();
+}
+
+function run() {
+    var x = parseInt(document.getElementById('foobar').value, 10);
+    Start(x);
+}
+function run2() {
+    var x = parseInt(document.getElementById('foobar2').value, 10);
+    repeater(x);
+}
+
 function call() {
     getlastelement();
     getrepeatfac();
@@ -85,4 +100,19 @@ function reset() {
     result = [];
     answer = 0;
     update();
+}
+
+var counts = {};
+var myobj = JSON.stringify(counts);
+
+function count(){
+    counts = {};
+    result.forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
+    getmyobj()
+console.log(myobj)
+document.getElementById('Counts').innerHTML = myobj;
+}
+
+function getmyobj() {
+    myobj = JSON.stringify(counts)
 }

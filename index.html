@@ -19,11 +19,17 @@ Write it as (x,y,z) <br>
 <br>
 Written like this: [x,x,x,x...x] w/ y x's. <br>
 Rule 1: if the last term is bigger than 0, then the last term subtracts 1, and expands into z+1 amount of x-1; <br>
-Rule 2: if the last term is 0, then add 1 to z and the zero is removed. <br>
-Use this buy right click and select inspect element, or shift+control+i to open the console. Then use the following functions. (I don't know how to make a input box lol, I am sorry.) <br>
-<br><br> Functions: <br> expands(x,y,z), initial value of the array. <br> Calculate() Calculate once; <br> repeater(n), repeatedly calculates the expression, based on n; (DON'T give this function ridiculous numbers)
-<br> repeaterrepeater() most of the time will repeat the funciton enough times to goes to the next expansion, (STILL, IF THE ARRAY IS GETTING TOO BIG, DON'T TRY TO USE THIS FUNCTION) <br>
-Have a good time playing around with this :)
+Rule 2: if the last term is 0, then add 1 to z and the zero is removed. <br> <br>
+<div>
+    <input type="text" placeholder="Enter a whole number" id="foobar" /> <br>
+<button type="button" onclick="run();">Start</button> <br>
+<button onclick="Calculate()"> Solve Once</button> <br>
+ <button onclick="betterrepeater()"> Solve till the next 1 (Could cause lag if the array is too long)</button> <br>
+ <input type="text" placeholder="Calculate how many time" id="foobar2" /> <br>
+ <button onclick="run2()"> Solve n times</button> <br>
+ <button onclick="count()"> Shows the amount of each number</button>
+</div>
+ <div id="Counts"> 0</div>
 <script src="main.js
 "></script>
 </html>
